@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>ViewEmployee</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 mx-auto mx-auto  mt-5" style="border: 1px; border-radius: 10px; background-color: #1111;">
+                <h2 class="text-center">Show Employee</h2>
+                <table class="table mx-auto">
+                    <tr>
+                        <th>Image :</th>
+                        <td><img src="/media/{{emp.image}}/" height="200px" width="150px" alt="love" class="rounded-squire"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Name :</th>
+                        <td>{{emp.name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Email :</th>
+                        <td>{{emp.email}}</td>
+                    </tr>
+                    <tr>
+                        <th>Mobile :</th>
+                        <td>{{emp.mobile}}</td>
+                    </tr>
+                    <tr>
+                        <th>Address :</th>
+                        <td>{{emp.address}}</td>
+                    </tr>
+                </table>
+                <a href="/">Back to Home</a>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
